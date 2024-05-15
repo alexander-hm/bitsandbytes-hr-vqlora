@@ -256,6 +256,7 @@ class Optimizer8bit(torch.optim.Optimizer):
 
     @torch.no_grad()
     def step(self, closure=None):
+        # print('Optimizer8Bit step()')
         """Perform a single optimization step.
 
         Arguments:
